@@ -1,0 +1,233 @@
+import turtle
+
+#keeping the background color dark blue
+turtle.bgcolor('#ffc233')
+
+#Define title of program
+turtle.title("Radhe Krishna")
+
+#Creating turtle screen
+screen = turtle.Screen()
+#Define height and width of screen
+screen.setup(650,580)
+
+t1 =turtle.Turtle()
+
+#keeeping the fast speed for now, speed can be kept as needed
+
+
+
+
+
+
+t1.speed(4)
+
+#Let's move down and go the position from where to draw
+t1.right(90)
+t1.pu()
+t1.forward(180)
+t1.left(90)
+#Now the turtle is pointing positive X-axis
+
+#Let's keep the pen down and start to draw the base
+t1.pd()
+#Shade of blue color by dipping out turtle brush
+t1.fillcolor("#ff99d1")
+t1.begin_fill()
+t1.forward(400)
+t1.right(90)
+t1.forward(100)
+t1.right(90)
+t1.forward(800)
+t1.right(90)
+t1.forward(100)
+t1.right(90)
+t1.forward(400)
+t1.end_fill()
+#Drawn the base which is in rectangular shape
+#end_fill will fill blue color, in the shape formed by turtle above
+
+#Now, turtle started to draw moon, I have selected a very light shade of blue to color moon
+t1.fillcolor("#CDEEF1")
+t1.begin_fill()
+t1.forward(160)
+t1.left(40)
+#this method is to draw the moon's border
+t1.circle(250,280)
+t1.left(40)
+t1.forward(160)
+t1.end_fill()
+#Drawn moon and as well as filled shade in it
+
+#Now, let's start to draw Radha Krishna
+#Turtle will draw Radha from right side and Krishna on left side
+#Let's start with Radha
+t1.fillcolor("#012427")
+t1.begin_fill()
+#Draw Dupatta
+t1.forward(160)
+t1.left(130)
+t1.circle(-300,30)
+t1.forward(95)
+#This will draw shoulder
+t1.circle(50,40)
+t1.right(40)
+#This will draw the head
+t1.forward(43)
+t1.circle(80,25)
+t1.circle(50,30)
+t1.left(10)
+t1.circle(35,28)
+#Radha completed
+
+#Now, let's draw Krishna's turban
+t1.right(160)
+t1.circle(10,100)
+t1.right(100)
+t1.circle(10,80)
+t1.forward(20)
+t1.left(80)
+t1.circle(100,15)
+t1.right(90)
+t1.forward(6)
+t1.left(65)
+t1.circle(60,55)
+
+#Following code will draw Krishna Morpankh
+t1.right(160)
+t1.circle(20,100)
+t1.forward(10)
+t1.circle(-20,25)
+t1.left(170)
+t1.circle(-20,40)
+t1.forward(10)
+t1.circle(20,80)
+#Morpankh done
+
+#Continuing to draw rest part of turban
+t1.right(135)
+t1.circle(60,15)
+t1.left(70)
+t1.forward(6)
+
+t1.right(110)
+t1.forward(9)
+
+t1.left(80)
+t1.circle(70,24)
+
+t1.right(60)
+t1.circle(65,30)
+t1.circle(-5,110)
+
+#Code below will draw the right hand of Krishna
+t1.circle(5,120)
+t1.right(90)
+t1.circle(5,60)
+t1.forward(10)
+t1.circle(10,5)
+t1.right(80)
+t1.forward(15)
+t1.circle(-5,160)
+#Now, draw first open finger of right hand
+t1.forward(6)
+t1.circle(2,180)
+t1.forward(6)
+t1.circle(20,30)
+
+#Draw fingers holding Bansuri
+t1.right(140)
+t1.circle(3,150)
+t1.right(110)
+t1.circle(4,80)
+t1.forward(2)
+t1.right(100)
+
+#Draw secong open finger if Krishna
+t1.forward(6)
+t1.right(60)
+t1.forward(9)
+t1.circle(2,180)
+t1.forward(10)
+t1.left(30)
+t1.forward(15)
+
+#Now Draw bansuri
+t1.right(85)
+t1.forward(40)
+t1.right(60)
+t1.circle(5,310)
+t1.right(80)
+t1.forward(3)
+t1.right(90)
+
+#Dor on bansuri
+t1.forward(42)
+t1.right(30)
+t1.forward(10)
+t1.left(90)
+t1.circle(20,60)
+t1.left(95)
+t1.forward(12)
+t1.right(29)
+t1.forward(42)
+
+#Draw the rest part of bansuri
+t1.right(90)
+t1.forward(34)
+t1.right(85)
+
+#Left hand of krishna
+t1.forward(2)
+t1.circle(60,25)
+
+#Now, draw Krishna's Dupatta 
+t1.right(80)
+t1.circle(10,40)
+t1.forward(45)
+t1.left(10)
+t1.forward(130)
+
+#Plates of Dupatta
+t1.left(90)
+t1.forward(20)
+t1.right(90)
+t1.forward(10)
+t1.left(90)
+t1.forward(10)
+t1.right(90)
+t1.forward(5)
+t1.left(90)
+t1.forward(25)
+
+#Complete drawing of Dupatta
+t1.left(100)
+t1.forward(120)
+
+t1.right(175)
+t1.circle(50,50)
+
+#Krishna's Dhoti
+t1.right(80)
+t1.circle(110,15)
+t1.forward(75)
+
+#The turtle will now reach at the beginning where Rectancular shape where drawn
+t1.left(97)
+t1.forward(260)
+t1.end_fill()
+#Complete drawing of Radha Krishna
+
+t1.pu()
+t1.right(90)
+t1.forward(100)
+t1.right(90)
+t1.forward(420)
+
+#Write Radha Krishna
+t1.color("#00a606")
+t1.write("Radhe Krishna....", font=("Script",45,"bold"))
+
+t1.hideturtle()
+
+turtle.done()
